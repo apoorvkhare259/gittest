@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suitegooglefb" duration-ms="15521" started-at="2018-09-12T10:02:30Z" finished-at="2018-09-12T10:02:45Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="15521" started-at="2018-09-12T10:02:30Z" finished-at="2018-09-12T10:02:45Z">
+      <class name="com.test.B">
+        <test-method status="PASS" signature="testm2()[pri:0, instance:com.test.B@1593948d]" name="testm2" duration-ms="15485" started-at="2018-09-12T10:02:30Z" finished-at="2018-09-12T10:02:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testm2 -->
+      </class> <!-- com.test.B -->
+      <class name="com.test.A">
+        <test-method status="PASS" signature="testm1()[pri:0, instance:com.test.A@4cc0edeb]" name="testm1" duration-ms="14737" started-at="2018-09-12T10:02:30Z" finished-at="2018-09-12T10:02:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testm1 -->
+      </class> <!-- com.test.A -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suitegooglefb -->
+</testng-results>

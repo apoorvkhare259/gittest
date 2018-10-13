@@ -1,0 +1,48 @@
+package com.seleniumtest.first;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Htmlpage {
+	
+	
+	public static void main(String[] args) throws InterruptedException {
+		
+		System.setProperty("webdriver.chrome.driver","F://Software//drivers//chromedriver.exe");
+		
+      	WebDriver driver =new ChromeDriver();
+      	
+      	driver.get("file:///C:/Users/my/Desktop/Test.html");
+      	
+ WebElement drpdwn= driver.findElement(By.xpath("/html/body/form/select"));
+		 
+		 Select sel= new Select(drpdwn);
+		 
+		 sel.selectByValue("volvo");
+		 Thread.sleep(3000);
+		 sel.selectByValue("saab");
+		 
+		 sel.deselectByValue("volvo");
+		
+		WebElement button = driver.findElement(By.xpath("/html/body/form/input[5]"));
+		button.click();
+		
+	WebElement chkbox=	driver.findElement(By.name("vehicle2"));
+	
+	Select sel1 = new Select(chkbox);
+	
+	sel1.deselectAll();
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+
+}

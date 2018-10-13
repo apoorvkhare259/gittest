@@ -1,0 +1,22 @@
+package com.selenium.test;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Iframe {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver","F://Software//drivers//chromedriver.exe");
+		//to handle webtables
+      	WebDriver driver =new ChromeDriver();
+      	
+      	driver.get("http://demo.guru99.com/test/guru99home/");
+      	driver.manage().window().maximize();
+
+		
+      	Int size = driver.findElements(By.tagName("iframe")).size();
+
+	}
+	
+}

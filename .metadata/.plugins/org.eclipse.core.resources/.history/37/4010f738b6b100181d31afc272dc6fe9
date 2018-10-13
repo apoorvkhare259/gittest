@@ -1,0 +1,30 @@
+package com.seleniumtest.first;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+
+public class Chromefirstscript {
+	
+	
+	public static void main(String[] args) {
+		
+		
+             //setup for browser
+		
+		System.setProperty("webdriver.chrome.driver","F://Software//drivers//chromedriver.exe");
+		
+		WebDriver driver =new InternetExplorerDriver();
+		//  driver.get("http://www.google.co.in");
+		  driver.navigate().to("http://www.google.com");
+		  driver.manage().window().maximize();  //to get full screen browser
+		     
+		
+		
+		
+	}
+	
+	
+	
+
+}
